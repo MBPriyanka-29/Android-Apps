@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/h1"
+    android:focusable="auto"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="true"
+        android:onClick="turn"
+        android:text="@string/turn"
+        android:textOff="@string/g_text"
+        android:textOn="@string/s_text"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/g_count_btn"
+        android:layout_width="98dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/g_count"
+        android:onClick="g_count"
+        app:srcCompat="@drawable/g" />
+
+    <ImageButton
+        android:id="@+id/s_count_btn"
+        android:layout_width="98dp"
+        android:layout_height="123dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/s_count"
+        android:onClick="s_count"
+        app:srcCompat="@drawable/s" />
+
+    <ImageView
+        android:id="@+id/ball_big_img"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_above="@id/g_count_btn"
+        android:layout_below="@id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/_30"
+        app:srcCompat="@drawable/qq" />
+
+    <Button
+        android:id="@+id/b_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/g_count_btn"
+        android:layout_alignBottom="@id/ball_big_img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/c_30"
+        android:onClick="p_30"
+        android:text="@string/_30"
+        android:textColor="@color/t_30" />
+
+
+    <ImageView
+        android:id="@+id/ball_med_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/g_count_btn"
+        android:layout_below="@id/toggleButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/_20"
+        app:srcCompat="@drawable/qq1" />
+
+    <Button
+        android:id="@+id/b_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/b_30"
+        android:layout_alignBottom="@id/ball_med_img"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/c_20"
+        android:onClick="p_20"
+        android:text="@string/_20"
+        android:textColor="@color/t_30" />
+
+    <ImageView
+        android:id="@+id/ball_small_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/s_count_btn"
+        android:layout_below="@id/toggleButton"
+        android:layout_alignEnd="@id/ball_big_img"
+        android:layout_alignRight="@id/ball_big_img"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+        android:contentDescription="@string/_10"
+        app:srcCompat="@drawable/qq3" />
+
+
+    <Button
+        android:id="@+id/b_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ball_small_img"
+        android:layout_alignBaseline="@id/b_30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="-48dp"
+        android:backgroundTint="@color/c_10"
+        android:onClick="p_10"
+        android:text="@string/_10"
+        android:textColor="@color/t_30" />
+
+    <ImageButton
+        android:id="@+id/g_snitch_id"
+        android:layout_width="186dp"
+        android:layout_height="212dp"
+        android:layout_below="@id/g_count_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="53dp"
+        android:contentDescription="@string/golden_snitch"
+        android:onClick="p_150"
+        app:srcCompat="@drawable/golden_snitch" />
+
+    <Button
+        android:id="@+id/finish_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/black"
+        android:onClick="finish"
+        android:text="@string/finish"
+        android:textColor="@color/gold" />
+</RelativeLayout>

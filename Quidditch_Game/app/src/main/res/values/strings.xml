@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quidditch</string>
+    <string name="g_count">g_count</string>
+    <string name="s_count">s_count</string>
+    <string name="turn_g">Gryffindor</string>
+    <string name="g_text">Gryffindor\'s Turn</string>
+    <string name="turn_s">Slytherin</string>
+    <string name="s_text">Slytherin\'s Turn</string>
+    <string name="turn">Turn</string>
+    <string name="quadtch">quadtch</string>
+    <string name="_30">30</string>
+    <string name="button">Button</string>
+    <string name="_20">20</string>
+    <string name="_10">10</string>
+    <string name="golden_snitch">Golden Snitch</string>
+    <string name="finish">Finish</string>
+
+
+    <string name="g_count_msg">Gryffindor scored : </string>
+    <string name="s_count_msg">Slytherin scored : </string>
+
+
+</resources>
